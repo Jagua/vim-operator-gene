@@ -1,0 +1,23 @@
+# vim-operator-gene
+
+**vim-operator-gene** is a Vim plugin.
+
+
+## .vimrc
+
+```vim
+nmap ;g <Plug>(operator-gene-preview)
+xmap ;g <Plug>(operator-gene-preview)
+let g:operator_gene_dict_path = expand('~/Dropbox/.vim/dict/gene.txt')
+```
+
+Typing `;giw` on a word, the translation is printed in preview window.
+
+
+## mappings
+
+
+* `<Plug>(operator-gene-echo)` : echo
+* `<Plug>(operator-gene-open-split)` : print in horizontal split window
+* `<Plug>(operator-gene-open-vsplit)` : print in vertical split window
+* `<Plug>(operator-gene-preview)` : print in preview window

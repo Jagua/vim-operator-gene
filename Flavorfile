@@ -1,0 +1,3 @@
+flavor 'kana/vim-operator-user', branch: 'master'
+
+# vim: filetype=ruby

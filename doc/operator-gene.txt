@@ -1,0 +1,85 @@
+*operator-gene.txt*  Operator: gene
+
+Version: 0.1.1
+Author: Jagua
+License: MIT License
+
+
+
+==============================================================================
+INTRODUCTION                                      *operator-gene-introduction*
+
+|operator-gene| is a Vim plugin to provide operators to show translations.
+
+
+Requirements:
+- Vim
+- |operator-user|
+  https://github.com/kana/vim-operator-user
+- GENE95 Dictionary
+  http://www.namazu.org/%7Etsuchiya/sdic/data/gene.html
+
+Latest version:
+https://github.com/Jagua/vim-operator-gene
+
+
+
+==============================================================================
+INTERFACE                                            *operator-gene-interface*
+
+------------------------------------------------------------------------------
+KEY MAPPINGS                                      *operator-gene-key-mappings*
+
+                                                  *<Plug>(operator-gene-echo)*
+<Plug>(operator-gene-echo){motion}
+        echo translations
+
+                                            *<Plug>(operator-gene-open-split)*
+<Plug>(operator-gene-open-split){motion}
+        print translations in horizontal split window
+
+                                           *<Plug>(operator-gene-open-vsplit)*
+<Plug>(operator-gene-open-vsplit){motion}
+        print translations in vertical split window
+
+                                               *<Plug>(operator-gene-preview)*
+<Plug>(operator-gene-preview){motion}
+        print translations in preview window
+
+
+------------------------------------------------------------------------------
+VARIABLES                                            *operator-gene-variables*
+
+g:operator_gene_dict_path                          *g:operator_gene_dict_path*
+        The path of "gene.txt" you installed.
+
+
+
+==============================================================================
+EXAMPLES                                              *operator-gene-examples*
+
+
+        .vimrc
+>
+        nmap ;g <Plug>(operator-gene-echo)
+<
+        Typing ;giw over a word, echo the Japanese translation of the word.
+
+        Typing ;gis over a sentence, echo the Japanese translations of all
+        words in the sentence.
+
+
+
+==============================================================================
+CHANGELOG                                            *operator-gene-changelog*
+
+0.1.1  2018-10-02
+       - Upload to GitHub.
+
+0.1.0  2016-01-13
+       - Initial version.
+
+
+
+==============================================================================
+vim:tw=78:ts=8:ft=help:et:norl:fen:fdl=0:
