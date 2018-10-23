@@ -8,7 +8,7 @@
 ```vim
 nmap ;g <Plug>(operator-gene-preview)
 xmap ;g <Plug>(operator-gene-preview)
-let g:operator_gene_dict_path = expand('~/Dropbox/.vim/dict/gene.txt')
+let g:operator_gene_dict_path = expand('~/.vim/dict/gene.txt')
 ```
 
 Typing `;giw` on a word, the translation is printed in preview window.
