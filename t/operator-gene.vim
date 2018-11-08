@@ -4,9 +4,9 @@
 scriptencoding utf-8
 
 
-if $PROFILE_LOG !=# ''
-  execute printf('profile start %s', $PROFILE_LOG)
-  execute printf('profile! file %s', 'autoload/*.vim')
+if !empty($PROFILE_LOG)
+  profile start $PROFILE_LOG
+  profile! file autoload/*.vim
 endif
 
 
